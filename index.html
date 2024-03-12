@@ -56,12 +56,15 @@
             text-decoration: none;
             display: block;
             cursor: pointer;
+            width: 100%;
+            box-sizing: border-box;
         }
         .sitemap-links {
             display: none;
             flex-wrap: wrap;
             gap: 10px;
             padding-left: 20px;
+            width: 100%;
         }
         li:hover .sitemap-links {
             display: flex;
@@ -74,6 +77,9 @@
             background-color: #f8f8f8;
             color: #333;
             margin: 0 5px 5px 0;
+            flex-basis: calc(20% - 10px);
+            text-align: center;
+            box-sizing: border-box;
         }
         footer {
             background-color: #fff;
@@ -82,6 +88,16 @@
             padding: 20px;
             font-size: 0.9rem;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+        }
+        @media screen and (max-width: 767px) {
+            .sitemap-links a {
+                flex-basis: calc(33.333% - 10px);
+            }
+        }
+        @media screen and (max-width: 480px) {
+            .sitemap-links a {
+                flex-basis: calc(50% - 10px);
+            }
         }
     </style>
 </head>
@@ -121,39 +137,39 @@
         </ul>
         <ul>
             <li>
-                <span class="sitemap-toggle">ウェブサイト1</span>
+                <span class="sitemap-toggle">ウェブサイト4</span>
                 <div class="sitemap-links">
-                    <a href="/sitemap1-1.xml">サイトマップ1-1</a>
-                    <a href="/sitemap1-2.xml">サイトマップ1-2</a>
-                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                    <a href="/sitemap4-1.xml">サイトマップ4-1</a>
+                    <a href="/sitemap4-2.xml">サイトマップ4-2</a>
+                    <a href="/sitemap4-3.xml">サイトマップ4-3</a>
+                    <a href="/sitemap4-4.xml">サイトマップ4-4</a>
+                    <a href="/sitemap4-5.xml">サイトマップ4-5</a>
+                    <a href="/sitemap4-6.xml">サイトマップ4-6</a>
+                    <a href="/sitemap4-7.xml">サイトマップ4-7</a>
+                    <a href="/sitemap4-8.xml">サイトマップ4-8</a>
+                    <a href="/sitemap4-9.xml">サイトマップ4-9</a>
                 </div>
             </li>
             <li>
-                <span class="sitemap-toggle">ウェブサイト2</span>
+                <span class="sitemap-toggle">ウェブサイト5</span>
                 <div class="sitemap-links">
-                    <a href="/sitemap2-1.xml">サイトマップ2-1</a>
-                    <a href="/sitemap2-2.xml">サイトマップ2-2</a>
-                    <a href="/sitemap2-3.xml">サイトマップ2-3</a>
+                    <a href="/sitemap5-1.xml">サイトマップ5-1</a>
+                    <a href="/sitemap5-2.xml">サイトマップ5-2</a>
+                    <a href="/sitemap5-3.xml">サイトマップ5-3</a>
                 </div>
             </li>
             <li>
-                <span class="sitemap-toggle">ウェブサイト3</span>
+                <span class="sitemap-toggle">ウェブサイト6</span>
                 <div class="sitemap-links">
-                    <a href="/sitemap3-1.xml">サイトマップ3-1</a>
-                    <a href="/sitemap3-2.xml">サイトマップ3-2</a>
-                    <a href="/sitemap3-3.xml">サイトマップ3-3</a>
+                    <a href="/sitemap6-1.xml">サイトマップ6-1</a>
+                    <a href="/sitemap6-2.xml">サイトマップ6-2</a>
+                    <a href="/sitemap6-3.xml">サイトマップ6-3</a>
                 </div>
             </li>
         </ul>
     </main>
     <footer>
-        &copy; 2023 Sitemap Hosting. All rights reserved.
+        &copy; 2018-2024 Sitemap Hosting. All rights reserved.
     </footer>
 </body>
 </html>
