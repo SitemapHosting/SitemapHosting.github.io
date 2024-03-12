@@ -6,88 +6,84 @@
     <title>Sitemap Hosting - 専門的なサイトマップホスティングサービス</title>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-        /* 前述のCSSコードはそのまま */
-
-        .sitemap-list {
-            list-style-type: none;
+        body {
+            font-family: 'Noto Sans JP', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
             padding: 0;
-        }
-        .sitemap-list li {
-            margin-bottom: 10px;
-        }
-        .sitemap-list .sitemap-toggle {
-            cursor: pointer;
-            display: inline-block;
             color: #333;
-            text-decoration: none;
-            padding: 10px 20px;
-            border: 1px solid #333;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin: 0;
+        }
+        main {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: 400;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .sitemap-toggle {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
             border-radius: 5px;
-            font-size: 1rem;
-            transition: background-color 0.3s, color 0.3s;
-        }
-        .sitemap-list .sitemap-toggle:hover {
-            background-color: #333;
-            color: #fff;
-        }
-        .sitemap-list .sitemap-links {
-            display: none;
-            margin-left: 20px;
-        }
-        .sitemap-list .sitemap-links a {
-            display: block;
+            background-color: #f8f8f8;
             color: #333;
+            margin: 0 5px 5px 0;
             text-decoration: none;
-            padding: 5px 0;
+            display: block;
+            cursor: pointer;
+        }
+        .sitemap-links {
+            display: none;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding-left: 20px;
+        }
+        li:hover .sitemap-links {
+            display: flex;
+        }
+        .sitemap-links a {
+            text-decoration: none;
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f8f8f8;
+            color: #333;
+            margin: 0 5px 5px 0;
+        }
+        footer {
+            background-color: #fff;
+            color: #333;
+            text-align: center;
+            padding: 20px;
             font-size: 0.9rem;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
         }
     </style>
-    <style>
-    ul {
-        list-style: none; /* 移除項目符號 */
-        padding: 0; /* 移除內邊距 */
-        display: flex; /* 使用Flexbox布局 */
-        flex-direction: row; /* 项目沿主轴水平排列 */
-        flex-wrap: wrap; /* 如果有需要，项目可以换行 */
-        gap: 10px; /* 项目之间的间隙 */
-    }
-
-    .sitemap-toggle {
-        padding: 5px 10px; /* 添加一些內邊距 */
-        border: 1px solid #ddd; /* 添加邊框 */
-        border-radius: 5px; /* 圓角邊框 */
-        background-color: #f8f8f8; /* 背景色 */
-        color: #333; /* 文字顏色 */
-        margin: 0 5px 5px 0; /* 外邊距 */
-        text-decoration: none; /* 移除下劃線 */
-        display: block; /* 確保標題換行 */
-    }
-
-    /* 可選樣式: 如果您想讓連結區塊隱藏或以不同的方式顯示，可以添加CSS規則 */
-    .sitemap-links {
-        display: none; /* 初始時不顯示連結 */
-    }
-
-    li:hover .sitemap-links {
-        display: block; /* 當滑鼠懸停時顯示連結 */
-        padding-left: 20px; /* 添加一些左側內邊距 */
-    }
-        .sitemap-links {
-    display: flex; /* 啟用Flexbox */
-    flex-wrap: wrap; /* 當無法容納更多項目時換行 */
-    gap: 10px; /* 設定項目之間的間隔 */
-}
-
-.sitemap-links a {
-    text-decoration: none; /* 移除超連結下劃線 */
-    padding: 5px 10px; /* 為超連結添加內邊距 */
-    border: 1px solid #ddd; /* 為超連結添加邊框 */
-    border-radius: 5px; /* 為邊框添加圓角 */
-    background-color: #f8f8f8; /* 設定超連結背景色 */
-    color: #333; /* 設定超連結文字顏色 */
-    margin: 0 5px 5px 0; /* 設定外邊距，確保有空間可以換行 */
-}
-</style>
 </head>
 <body>
     <header>
@@ -97,78 +93,67 @@
         <h2>サイトマップホスティング</h2>
         <p>Sitemap Hostingは、サイトマップ.xmlファイルのホスティングと管理に特化した専門的なサービスです。当サイトでサイトマップをホストすることで、検索エンジンがウェブページを効率的にクロールおよびインデックス化できるようになり、サイトの検索エンジン最適化（SEO）が向上します。これにより、サイトの可視性と検索ランキングが大幅に改善されます。</p>
         <p>以下のリストから、各ウェブサイトのサイトマップにアクセスできます。</p>
- <ul>
-    <li>
-        <span class="sitemap-toggle">ウェブサイト1</span>
-        <div class="sitemap-links">
-            <a href="/sitemap1-1.xml">サイトマップ1-1</a>
-            <a href="/sitemap1-2.xml">サイトマップ1-2</a>
-            <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-        </div>
-    </li>
-    <li>
-        <span class="sitemap-toggle">ウェブサイト2</span>
-        <div class="sitemap-links">
-            <a href="/sitemap2-1.xml">サイトマップ2-1</a>
-            <a href="/sitemap2-2.xml">サイトマップ2-2</a>
-            <a href="/sitemap2-3.xml">サイトマップ2-3</a>
-        </div>
-    </li>
-    <li>
-        <span class="sitemap-toggle">ウェブサイト3</span>
-        <div class="sitemap-links">
-            <a href="/sitemap3-1.xml">サイトマップ3-1</a>
-            <a href="/sitemap3-2.xml">サイトマップ3-2</a>
-            <a href="/sitemap3-3.xml">サイトマップ3-3</a>
-        </div>
-    </li>
-</ul>
- <ul>
-    <li>
-        <span class="sitemap-toggle">ウェブサイト1</span>
-        <div class="sitemap-links">
-            <a href="/sitemap1-1.xml">サイトマップ1-1</a>
-            <a href="/sitemap1-2.xml">サイトマップ1-2</a>
-            <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-            <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-            <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-            <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-            <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-            <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-            <a href="/sitemap1-3.xml">サイトマップ1-3</a>
-        </div>
-    </li>
-    <li>
-        <span class="sitemap-toggle">ウェブサイト2</span>
-        <div class="sitemap-links">
-            <a href="/sitemap2-1.xml">サイトマップ2-1</a>
-            <a href="/sitemap2-2.xml">サイトマップ2-2</a>
-            <a href="/sitemap2-3.xml">サイトマップ2-3</a>
-        </div>
-    </li>
-    <li>
-        <span class="sitemap-toggle">ウェブサイト3</span>
-        <div class="sitemap-links">
-            <a href="/sitemap3-1.xml">サイトマップ3-1</a>
-            <a href="/sitemap3-2.xml">サイトマップ3-2</a>
-            <a href="/sitemap3-3.xml">サイトマップ3-3</a>
-        </div>
-    </li>
-</ul>
+        <ul>
+            <li>
+                <span class="sitemap-toggle">ウェブサイト1</span>
+                <div class="sitemap-links">
+                    <a href="/sitemap1-1.xml">サイトマップ1-1</a>
+                    <a href="/sitemap1-2.xml">サイトマップ1-2</a>
+                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                </div>
+            </li>
+            <li>
+                <span class="sitemap-toggle">ウェブサイト2</span>
+                <div class="sitemap-links">
+                    <a href="/sitemap2-1.xml">サイトマップ2-1</a>
+                    <a href="/sitemap2-2.xml">サイトマップ2-2</a>
+                    <a href="/sitemap2-3.xml">サイトマップ2-3</a>
+                </div>
+            </li>
+            <li>
+                <span class="sitemap-toggle">ウェブサイト3</span>
+                <div class="sitemap-links">
+                    <a href="/sitemap3-1.xml">サイトマップ3-1</a>
+                    <a href="/sitemap3-2.xml">サイトマップ3-2</a>
+                    <a href="/sitemap3-3.xml">サイトマップ3-3</a>
+                </div>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span class="sitemap-toggle">ウェブサイト1</span>
+                <div class="sitemap-links">
+                    <a href="/sitemap1-1.xml">サイトマップ1-1</a>
+                    <a href="/sitemap1-2.xml">サイトマップ1-2</a>
+                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                    <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                </div>
+            </li>
+            <li>
+                <span class="sitemap-toggle">ウェブサイト2</span>
+                <div class="sitemap-links">
+                    <a href="/sitemap2-1.xml">サイトマップ2-1</a>
+                    <a href="/sitemap2-2.xml">サイトマップ2-2</a>
+                    <a href="/sitemap2-3.xml">サイトマップ2-3</a>
+                </div>
+            </li>
+            <li>
+                <span class="sitemap-toggle">ウェブサイト3</span>
+                <div class="sitemap-links">
+                    <a href="/sitemap3-1.xml">サイトマップ3-1</a>
+                    <a href="/sitemap3-2.xml">サイトマップ3-2</a>
+                    <a href="/sitemap3-3.xml">サイトマップ3-3</a>
+                </div>
+            </li>
+        </ul>
     </main>
     <footer>
         &copy; 2023 Sitemap Hosting. All rights reserved.
     </footer>
-
-    <script>
-        const toggles = document.querySelectorAll('.sitemap-toggle');
-
-        toggles.forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                const links = toggle.nextElementSibling;
-                links.style.display = links.style.display === 'none' ? 'block' : 'none';
-            });
-        });
-    </script>
 </body>
 </html>
