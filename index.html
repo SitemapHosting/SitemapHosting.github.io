@@ -2,43 +2,69 @@
 <html>
 <head>
   <title>Sitemap</title>
-  
+
   <style>
     body {
-      font-family: Arial, sans-serif;
+      background-color: #f2f2f2; 
+      font-family: "Helvetica Neue", Arial, sans-serif;
       margin: 0;
       padding: 0;
     }
     
-    h1 {
-      background-color: #3f51b5;
-      color: #fff;
+    #header {
+      background-color: #333;
+      color: #fff; 
       padding: 20px;
-      text-align: center; 
+    }
+    
+    #header h1 {
+      margin: 0;
+    }
+    
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
     }
     
     p {
-      margin: 20px;
+      line-height: 1.6;
+    }
+    
+    #footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
     }
     
     a {
-      background-color: #3f51b5;
+      background-color: #4c7ef3;
       border-radius: 4px;
       color: #fff;
-      padding: 10px 20px;
+      padding: 15px 30px;
       text-decoration: none;
     }
+
   </style>
-  
+
 </head>
 
 <body>
 
-  <h1>Sitemap</h1>
+  <div id="header">
+    <h1>Sitemap</h1>
+  </div>
 
-  <p>This page hosts the sitemap.xml file for SEO purposes.</p>
+  <main>
+    <p>This page hosts the sitemap.xml file for SEO purposes.</p>
 
-  <a href="sitemap.xml">View sitemap.xml</a>
+    <a href="sitemap.xml">View sitemap.xml</a>
+  </main>
+  
+  <div id="footer">
+    Copyright © 2022 My Company
+  </div>
 
 </body>
 </html>
