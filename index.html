@@ -41,10 +41,6 @@
         ul {
             list-style: none;
             padding: 0;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            gap: 10px;
         }
         .sitemap-toggle {
             padding: 5px 10px;
@@ -52,7 +48,7 @@
             border-radius: 5px;
             background-color: #f8f8f8;
             color: #333;
-            margin: 0 5px 5px 0;
+            margin-bottom: 5px;
             text-decoration: none;
             display: block;
             cursor: pointer;
@@ -61,24 +57,21 @@
         }
         .sitemap-links {
             display: none;
-            flex-wrap: wrap;
-            gap: 10px;
             padding-left: 20px;
-            width: 100%;
+            margin-bottom: 10px;
         }
         li:hover .sitemap-links {
-            display: flex;
+            display: block;
         }
         .sitemap-links a {
+            display: block;
             text-decoration: none;
             padding: 5px 10px;
             border: 1px solid #ddd;
             border-radius: 5px;
             background-color: #f8f8f8;
             color: #333;
-            margin: 0 5px 5px 0;
-            flex-basis: calc(20% - 10px);
-            text-align: center;
+            margin-bottom: 5px;
             box-sizing: border-box;
         }
         footer {
@@ -88,36 +81,6 @@
             padding: 20px;
             font-size: 0.9rem;
             box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-        }
-        @media screen and (max-width: 767px) {
-            .sitemap-links a {
-                flex-basis: calc(33.333% - 10px);
-            }
-        }
-        @media screen and (max-width: 480px) {
-            .sitemap-links a {
-                flex-basis: calc(50% - 10px);
-            }
-        }
-        @media screen and (max-width: 457px) {
-            li {
-                position: relative;
-            }
-            li:hover .sitemap-links {
-                position: absolute;
-                background-color: #f8f8f8;
-                padding: 10px;
-                border: 1px solid #ddd;
-                border-radius: 5px;
-                z-index: 1;
-                left: 0;
-                right: 0;
-                max-width: 100%;
-                box-sizing: border-box;
-            }
-            .sitemap-links a {
-                flex-basis: 100%;
-            }
         }
     </style>
 </head>
