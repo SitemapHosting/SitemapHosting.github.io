@@ -100,6 +100,9 @@
             }
         }
         @media screen and (max-width: 457px) {
+            li {
+                position: relative;
+            }
             li:hover .sitemap-links {
                 position: absolute;
                 background-color: #f8f8f8;
@@ -107,6 +110,13 @@
                 border: 1px solid #ddd;
                 border-radius: 5px;
                 z-index: 1;
+                left: 0;
+                right: 0;
+                max-width: 100%;
+                box-sizing: border-box;
+            }
+            .sitemap-links a {
+                flex-basis: 100%;
             }
         }
     </style>
