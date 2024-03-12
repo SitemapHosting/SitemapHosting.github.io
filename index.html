@@ -38,41 +38,48 @@
             font-size: 1.1rem;
             line-height: 1.6;
         }
-        ul {
-            list-style: none;
+        .sitemap-list {
+            list-style-type: none;
             padding: 0;
         }
-        .sitemap-toggle {
-            padding: 5px 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            background-color: #f8f8f8;
-            color: #333;
-            margin-bottom: 5px;
-            text-decoration: none;
-            display: block;
+        .sitemap-list li {
+            margin-bottom: 20px;
+        }
+        .sitemap-list .sitemap-toggle {
             cursor: pointer;
-            width: 100%;
-            box-sizing: border-box;
+            display: inline-block;
+            color: #333;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 1px solid #333;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background-color 0.3s, color 0.3s;
         }
-        .sitemap-links {
+        .sitemap-list .sitemap-toggle:hover {
+            background-color: #333;
+            color: #fff;
+        }
+        .sitemap-list .sitemap-links {
             display: none;
-            padding-left: 20px;
-            margin-bottom: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
         }
-        li:hover .sitemap-links {
+        .sitemap-list .sitemap-links a {
             display: block;
-        }
-        .sitemap-links a {
-            display: block;
+            color: #333;
             text-decoration: none;
             padding: 5px 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #333;
             border-radius: 5px;
-            background-color: #f8f8f8;
-            color: #333;
-            margin-bottom: 5px;
-            box-sizing: border-box;
+            font-size: 0.9rem;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .sitemap-list .sitemap-links a:hover {
+            background-color: #333;
+            color: #fff;
         }
         footer {
             background-color: #fff;
@@ -92,13 +99,15 @@
         <h2>サイトマップホスティング</h2>
         <p>Sitemap Hostingは、サイトマップ.xmlファイルのホスティングと管理に特化した専門的なサービスです。当サイトでサイトマップをホストすることで、検索エンジンがウェブページを効率的にクロールおよびインデックス化できるようになり、サイトの検索エンジン最適化（SEO）が向上します。これにより、サイトの可視性と検索ランキングが大幅に改善されます。</p>
         <p>以下のリストから、各ウェブサイトのサイトマップにアクセスできます。</p>
-        <ul>
+        <ul class="sitemap-list">
             <li>
                 <span class="sitemap-toggle">ウェブサイト1</span>
                 <div class="sitemap-links">
                     <a href="/sitemap1-1.xml">サイトマップ1-1</a>
                     <a href="/sitemap1-2.xml">サイトマップ1-2</a>
                     <a href="/sitemap1-3.xml">サイトマップ1-3</a>
+                    <a href="/sitemap1-4.xml">サイトマップ1-4</a>
+                    <a href="/sitemap1-5.xml">サイトマップ1-5</a>
                 </div>
             </li>
             <li>
@@ -107,6 +116,8 @@
                     <a href="/sitemap2-1.xml">サイトマップ2-1</a>
                     <a href="/sitemap2-2.xml">サイトマップ2-2</a>
                     <a href="/sitemap2-3.xml">サイトマップ2-3</a>
+                    <a href="/sitemap2-4.xml">サイトマップ2-4</a>
+                    <a href="/sitemap2-5.xml">サイトマップ2-5</a>
                 </div>
             </li>
             <li>
@@ -115,44 +126,26 @@
                     <a href="/sitemap3-1.xml">サイトマップ3-1</a>
                     <a href="/sitemap3-2.xml">サイトマップ3-2</a>
                     <a href="/sitemap3-3.xml">サイトマップ3-3</a>
+                    <a href="/sitemap3-4.xml">サイトマップ3-4</a>
+                    <a href="/sitemap3-5.xml">サイトマップ3-5</a>
                 </div>
             </li>
-        </ul>
-        <ul>
-            <li>
-                <span class="sitemap-toggle">ウェブサイト4</span>
-                <div class="sitemap-links">
-                    <a href="/sitemap4-1.xml">サイトマップ4-1</a>
-                    <a href="/sitemap4-2.xml">サイトマップ4-2</a>
-                    <a href="/sitemap4-3.xml">サイトマップ4-3</a>
-                    <a href="/sitemap4-4.xml">サイトマップ4-4</a>
-                    <a href="/sitemap4-5.xml">サイトマップ4-5</a>
-                    <a href="/sitemap4-6.xml">サイトマップ4-6</a>
-                    <a href="/sitemap4-7.xml">サイトマップ4-7</a>
-                    <a href="/sitemap4-8.xml">サイトマップ4-8</a>
-                    <a href="/sitemap4-9.xml">サイトマップ4-9</a>
-                </div>
-            </li>
-            <li>
-                <span class="sitemap-toggle">ウェブサイト5</span>
-                <div class="sitemap-links">
-                    <a href="/sitemap5-1.xml">サイトマップ5-1</a>
-                    <a href="/sitemap5-2.xml">サイトマップ5-2</a>
-                    <a href="/sitemap5-3.xml">サイトマップ5-3</a>
-                </div>
-            </li>
-            <li>
-                <span class="sitemap-toggle">ウェブサイト6</span>
-                <div class="sitemap-links">
-                    <a href="/sitemap6-1.xml">サイトマップ6-1</a>
-                    <a href="/sitemap6-2.xml">サイトマップ6-2</a>
-                    <a href="/sitemap6-3.xml">サイトマップ6-3</a>
-                </div>
-            </li>
+            <!-- 必要に応じてサイトマップのリンクを追加 -->
         </ul>
     </main>
     <footer>
         &copy; 2023 Sitemap Hosting. All rights reserved.
     </footer>
+
+    <script>
+        const toggles = document.querySelectorAll('.sitemap-toggle');
+
+        toggles.forEach(toggle => {
+            toggle.addEventListener('click', () => {
+                const links = toggle.nextElementSibling;
+                links.style.display = links.style.display === 'none' ? 'flex' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
